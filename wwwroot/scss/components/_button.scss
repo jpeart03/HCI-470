@@ -1,0 +1,22 @@
+.rc-btn {
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.2ch;
+  font-family: $typeface-heading;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: $color-white;
+  background-color: $color-secondary;
+  text-decoration: none;
+  transition-property: border, background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color-secondary, 10%);
+    cursor: pointer;
+  }
+}
