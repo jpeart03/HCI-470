@@ -9,6 +9,11 @@ h6 {
   font-family: $typeface-heading;
 }
 
-p {
+p,
+ul,
+li,
+input,
+textarea,
+label {
   font-family: $typeface-body;
 }

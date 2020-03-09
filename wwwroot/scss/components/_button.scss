@@ -12,11 +12,19 @@
   transition-property: border, background-color;
   transition-duration: 200ms;
   transition-timing-function: ease;
+  border: 5px solid transparent;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($color-secondary, 10%);
     cursor: pointer;
+    border: 5px solid darken($color-secondary, 20%);
+    background-color: darken($color-secondary, 10%);
+  }
+}
+
+@media only screen and (min-width: $mobile-breakpoint) {
+  .rc-btn {
+    font-size: 1.5rem;
   }
 }

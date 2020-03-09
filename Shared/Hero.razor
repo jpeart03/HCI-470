@@ -1,19 +1,13 @@
 <div class="hero">
-    <div class="hero__content">
+    <div class="hero__content fade-in">
         <h1>Give <span class="hero__callout">life</span> a chance</h1>
         <p>Keep toxins like lead, cadmium and chromium out of our soil, water &amp; food.</p>
         <p>Recycle your electronic waste.</p>
-        <a href=@buttonRoute class="rc-btn">How to help</a>
+        <a href=@ButtonRoute class="rc-btn">How to help</a>
     </div>
 </div>
 
 @code {
-    private string buttonRoute = "/";
     [Parameter]
-    public string ButtonRoute { get; set; }
-
-    protected override void OnInitialized()
-    {
-        buttonRoute = ButtonRoute;
-    }
+    public string ButtonRoute { get; set; } = "/";
 }

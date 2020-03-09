@@ -32,7 +32,7 @@
     &:hover {
       .navbar {
         &__icon {
-          color: $color-primary;
+          color: $color-secondary;
         }
       }
     }
@@ -51,7 +51,7 @@
 
 .active {
   background-color: $color-background-dark;
-  color: $color-primary;
+  color: $color-secondary;
 }
 
 @media only screen and (min-width: $mobile-breakpoint) {
@@ -70,14 +70,28 @@
     &__logo {
       width: 100%;
       display: flex;
-      font-size: 1.8rem;
-      letter-spacing: 0.3ch;
-      font-weight: bold;
-      text-transform: uppercase;
       margin: 1rem 0;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
+
+      .navbar__text {
+        font-size: 2.25rem;
+        letter-spacing: 0.2ch;
+        font-weight: bold;
+        color: $color-primary;
+        text-transform: uppercase;
+      }
+      .navbar__link:hover {
+        .navbar {
+          &__text {
+            color: $color-primary;
+          }
+          &__icon {
+            color: $color-gray-light;
+          }
+        }
+      }
     }
 
     &__link {
@@ -85,7 +99,7 @@
       &:hover {
         .navbar {
           &__text {
-            color: $color-primary;
+            color: $color-secondary;
           }
         }
       }
@@ -93,6 +107,7 @@
 
     &__text {
       display: none;
+      font-size: 1.25rem;
       margin-left: 1rem;
       white-space: nowrap;
       overflow: hidden;
